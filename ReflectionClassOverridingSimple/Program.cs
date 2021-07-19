@@ -6,7 +6,7 @@ namespace ReflectionClassOverridingSimple
 {
     class Program
     {
-        static OverridingClass over;
+        static ReflectionOverriding over;
 
         static void Main(string[] args)
         {
@@ -19,17 +19,18 @@ namespace ReflectionClassOverridingSimple
         //This is how we call functions using OverridingClass.
         static void Simple()
         {
-            over = new OverridingClass(Assembly.GetExecutingAssembly());
+            over = new ReflectionOverriding(Assembly.GetExecutingAssembly());
 
             //To call functions from interface, <Use SendMessage()> method.
             over.SendMessage("Start");
+            
             over.SendMessage("Update");
         }
 
         //This is how we call our own interface functions using OverridingClass.
         static void CustomInterface()
         {
-            over = new OverridingClass(Assembly.GetExecutingAssembly());
+            over = new ReflectionOverriding(Assembly.GetExecutingAssembly());
 
             //If you to use custom interface, after creating you need to set name of your interface in <ComponentName> variable.
             over.ComponentName = "MyInterface";// <MyInterface> is my custom interface name

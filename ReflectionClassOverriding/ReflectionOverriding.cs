@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace ReflectionClassOverriding
 {
-    public class OverridingClass
+    public class ReflectionOverriding
     {
         /// <summary>
         /// Target interface class that we want ro override it.Default is "Behavior".
@@ -19,7 +19,7 @@ namespace ReflectionClassOverriding
         public Type[] AssmblyTyps;
         public Type[] MainRunnTimeAssmblyTyps;
 
-        public OverridingClass(Assembly ProjectAssmbly)
+        public ReflectionOverriding(Assembly ProjectAssmbly)
         {
             EngineAssmbly = ProjectAssmbly;
         }
