@@ -15,7 +15,7 @@ namespace ReflectionClassOverriding
         int OverridingCount = 0;
         bool Started = false;
 
-        object[] ob;
+        object[] Objects;
         public Type[] AssmblyTyps;
         public Type[] MainRunnTimeAssmblyTyps;
 
@@ -50,7 +50,7 @@ namespace ReflectionClassOverriding
                 catch { }
             }
 
-            ob = new object[OverridingCount];
+            Objects = new object[OverridingCount];
             MainRunnTimeAssmblyTyps = new Type[OverridingCount];
             int i = 0;
 
@@ -67,7 +67,7 @@ namespace ReflectionClassOverriding
                         if (name != string.Empty)
                         {
                             MainRunnTimeAssmblyTyps[i] = item;
-                            ob[i] = Activator.CreateInstance(item);
+                            Objects[i] = Activator.CreateInstance(item);
                             i++;
                         }
                     }
@@ -97,7 +97,7 @@ namespace ReflectionClassOverriding
             {
                 try
                 {
-                    CallMethod(ob[i], MainRunnTimeAssmblyTyps[i], methodName);
+                    CallMethod(Objects[i], MainRunnTimeAssmblyTyps[i], methodName);
                 }
                 catch { }
             }
