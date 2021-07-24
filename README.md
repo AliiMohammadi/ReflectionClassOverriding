@@ -5,7 +5,7 @@ as input parameter.
 Then herit which class you need to overrid functions. You can herit the class with default interface <Behavior> or you can creat your custom interface.
 To call your functions you just need to write <SendMessage> method and give it the name of the your functions as string.
 Example:
-
+```
 //main class
 class Program{
 	void Main (){
@@ -20,11 +20,12 @@ class MyClass : Behavior{
 		console.writeline("Hello Function Form MyClass.");
 	}
 }
+	```
 .
 If you want to overrid you own interface, First you need to creat your interface, Then herit it with any class you want.
 At the start calling you need to set "re.ComponentName" variable to your interface name as string.
 Example:
-
+```
 //main class
 class Program{
 	void Main (){
@@ -43,4 +44,4 @@ class MyClass : Behavior{
 		console.writeline("Hello Function Form MyClass.");
 	}
 }
-  
+  ```
