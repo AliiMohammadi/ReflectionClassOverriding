@@ -1,4 +1,4 @@
-***Reflection Class Overriding***  will help you to overrid classes with just single method and name of the function. Just like scripting system in Unity and functions like 
+***Reflection Class Overriding***  will help you to override classes with just single method and name of the function. Just like scripting system in Unity and functions like 
 Update , Start , Fixed Update and other Unity functions. Using this library you can call functions with no any references. It is easy to use. First we need to 
 add reference to DLL file. In your project you need to creat instance of **<ReflectionOverriding>** class and give it **<System.Reflection.Assembly.GetExecutingAssembly()>**
 as input parameter.
