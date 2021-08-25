@@ -48,3 +48,6 @@ class MyClass : Behavior{
 	}
 }
 ```
+
+Tutorial video:
+https://www.youtube.com/watch?v=oVKU0f1iT_k&t=1s
